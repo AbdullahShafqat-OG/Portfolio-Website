@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@import 'bootstrap/dist/css/bootstrap.css';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+:root {
+  --yellow-shade: #FFD60A;
+  --darkyellow-shade: #FFC300;
+  --blue-shade: #003566;
+  --darkblue-shade: #001D3D;
+  --black-shade: #000814;
+} 
+
+* {
+  scroll-margin-top: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-yellow {
+  background-color: var(--yellow-shade);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-darkyellow {
+  background-color: var(--darkyellow-shade) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-blue {
+  background-color: var(--blue-shade) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-darkblue {
+  background-color: var(--darkblue-shade) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-black {
+  background-color: var(--black-shade);
+}
+
+.container-div {
+  border-radius: 25px;
+  padding: 25px;
+}
+
+p {
+  text-align: justify;
+  color: var(--bs-light);
+}
+
+.form-control:not(active) {
+  background-color: var(--darkblue-shade);
+  color: var(--bs-light)
+}
+
+.nav-link-resume-button {
+  border: 1px solid var(--bs-warning);
+  border-radius: 5px;
+}
+
+.navbar-brand {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 900;
+  color: var(--bs-warning) !important;
 }
